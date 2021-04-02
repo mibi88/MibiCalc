@@ -62,6 +62,10 @@ def div():
     #
     print("/")
     calcs.insert(END, "/")
+def mod():
+    #
+    print("%")
+    calcs.insert(END, "%")
 def multi():
     #
     print("*")
@@ -136,9 +140,12 @@ multiplyb.grid(column=4, row=4)
 #/
 divb = Button(root, text="/", command=div)
 divb.grid(column=4, row=5)
+#%
+modb = Button(root, text="mod", command=mod)
+modb.grid(column=4, row=1)
 #AC
 clearb = Button(root, text="AC", command=clear)
-clearb.grid(column=4, row=1)
+clearb.grid(column=3, row=1)
 #EXE button
 clearb = Button(root, text="EXE", command=execute)
 clearb.grid(column=1, row=1)
