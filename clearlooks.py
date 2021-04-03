@@ -1,10 +1,11 @@
 from tkinter import ttk
 from tkinter import Tk
+from ttkthemes import ThemedTk
 # from tkinter import ttk
 # from tkinter.ttk import *
 from math import *
 
-main = Tk()
+main = ThemedTk(theme="clearlooks")
 # main.resizable(width = 0, height = 0)
 main.title("MibiCalc")
 main.rowconfigure(0, weight=1)
